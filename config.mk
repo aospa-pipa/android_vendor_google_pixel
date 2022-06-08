@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_INCLUDE_NEXUSLAUNCHER), true)
 PRODUCT_PACKAGES += \
+    PixelLauncherFontOverlay \
     PixelLauncherFrameworksOverlay \
     PixelLauncherSystemUIOverlay
 endif

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Launcher package name for overlaying icons. -->
+    <string name="launcher_overlayable_package" translatable="false">com.google.android.apps.nexuslauncher</string>
+
+</resources>

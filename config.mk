@@ -16,6 +16,15 @@
 $(call inherit-product, vendor/google/pixel/pixel-vendor.mk)
 $(call inherit-product, vendor/aospa/prebuilt/pixel/packages.mk)
 
+# NexusLauncher
+ifeq ($(TARGET_INCLUDE_NEXUSLAUNCHER), true)
+PRODUCT_PACKAGES += \
+    NexusLauncherRelease \
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease
+endif
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAPixelSetupWizardOverlay \
@@ -29,6 +38,12 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardOverlayExpressive \
     PixelSetupWizardStringsOverlay \
     PixelSystemUIOverlay
+
+ifeq ($(TARGET_INCLUDE_NEXUSLAUNCHER), true)
+PRODUCT_PACKAGES += \
+    PixelLauncherFrameworksOverlay \
+    PixelLauncherSystemUIOverlay
+endif
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/google/pixel/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/google/pixel/overlay/static

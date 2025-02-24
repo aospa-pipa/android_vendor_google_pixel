@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt_33000242 \
     SettingsIntelligenceGooglePrebuilt \
     Flipendo \
+    NexusLauncherRelease \
     SetupWizardPixelPrebuilt_versioned \
     SystemUIClocks-BigNum \
     SystemUIClocks-Calligraphy \

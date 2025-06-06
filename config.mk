@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     PixelDocumentsUIGoogleOverlay \
     PixelDocumentsUIOverlay \
     PixelFrameworksOverlay \
-    PixelLauncherFontOverlay \
+    PixelLauncherOverlay \
     PixelSettingsOverlay \
     PixelSetupWizardOverlay \
     PixelSetupWizardOverlay2024 \

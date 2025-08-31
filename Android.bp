@@ -20,9 +20,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "SoundPickerPrebuilt",
+	name: "SoundPickerPrebuilt_32000122",
 	owner: "google",
-	apk: "proprietary/product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk",
+	apk: "proprietary/product/app/SoundPickerPrebuilt_32000122/SoundPickerPrebuilt_32000122.apk",
 	preprocessed: true,
 	presigned: true,
 	overrides: ["SoundPicker"],

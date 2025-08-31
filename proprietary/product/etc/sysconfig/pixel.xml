@@ -112,6 +112,7 @@
          provided by the package. -->
     <allow-association target="com.google.android.as" allowed="com.android.bluetooth" />
     <allow-association target="com.google.android.as" allowed="com.android.bluetooth.services" />
+    <allow-association target="com.google.android.as" allowed="com.android.phone" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.contacts" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.media" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.telephony" />
@@ -149,4 +150,10 @@
          in background; otherwise, it may not be able to enforce provision for managed devices. -->
     <allow-in-power-save package="com.google.android.devicelockcontroller" />
     <allow-in-data-usage-save package="com.google.android.devicelockcontroller" />
+
+
+    <!-- These packages are part of Remote Key Provisioning and are allowed to always have
+         internet access while in power save mode, or in data saver mode. -->
+    <allow-in-power-save package="com.google.android.rkpdapp" />
+    <allow-in-data-usage-save package="com.google.android.rkpdapp" />
 </config>

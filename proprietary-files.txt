@@ -1,5 +1,5 @@
 product/app/MarkupGoogle_v2/MarkupGoogle_v2.apk;PRESIGNED
-product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk;PRESIGNED;OVERRIDES=SoundPicker
+product/app/SoundPickerPrebuilt_32000122/SoundPickerPrebuilt_32000122.apk;PRESIGNED;OVERRIDES=SoundPicker
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/preferred-apps/google.xml:product/etc/preferred-apps/pixel.xml
 product/etc/sysconfig/game_service.xml
@@ -74,7 +74,6 @@ product/media/audio/ui/Dock.ogg
 product/media/audio/ui/Effect_Tick.ogg
 product/media/audio/ui/InCallNotification.ogg
 product/media/audio/ui/KeypressDelete.ogg
-product/media/audio/ui/KeypressInvalid.ogg
 product/media/audio/ui/KeypressReturn.ogg
 product/media/audio/ui/KeypressSpacebar.ogg
 product/media/audio/ui/KeypressStandard.ogg
@@ -87,7 +86,6 @@ product/media/audio/ui/NFCTransferComplete.ogg
 product/media/audio/ui/NFCTransferInitiated.ogg
 product/media/audio/ui/reverse_charging_end.ogg
 product/media/audio/ui/reverse_charging_start.ogg
-product/media/audio/ui/Trusted.ogg
 product/media/audio/ui/Undock.ogg
 product/media/audio/ui/Unlock.ogg
 product/media/audio/ui/VideoRecord.ogg

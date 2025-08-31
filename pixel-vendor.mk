@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/pixel/proprietary/product/media/audio/ui/Effect_Tick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/InCallNotification.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/InCallNotification.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/KeypressDelete.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressDelete.ogg \
-    vendor/google/pixel/proprietary/product/media/audio/ui/KeypressInvalid.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressInvalid.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/KeypressReturn.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressReturn.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/KeypressSpacebar.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressSpacebar.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/KeypressStandard.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressStandard.ogg \
@@ -87,7 +86,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/pixel/proprietary/product/media/audio/ui/NFCSuccess.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/NFCSuccess.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/NFCTransferComplete.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/NFCTransferComplete.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/NFCTransferInitiated.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/NFCTransferInitiated.ogg \
-    vendor/google/pixel/proprietary/product/media/audio/ui/Trusted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Trusted.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/Undock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Undock.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/Unlock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Unlock.ogg \
     vendor/google/pixel/proprietary/product/media/audio/ui/VideoRecord.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/VideoRecord.ogg \
@@ -104,7 +102,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     MarkupGoogle_v2 \
-    SoundPickerPrebuilt \
+    SoundPickerPrebuilt_32000122 \
     SettingsIntelligenceGooglePrebuilt \
     Flipendo \
     SetupWizardPixelPrebuilt \

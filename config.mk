@@ -23,7 +23,9 @@ PRODUCT_PACKAGES += \
     PixelFrameworksOverlay \
     PixelSettingsOverlay \
     PixelSetupWizardOverlay \
-    PixelSetupWizardOverlay2021 \
+    PixelSetupWizardOverlay2024 \
+    PixelSetupWizardOverlay2025 \
+    PixelSetupWizardOverlayExpressive \
     PixelSetupWizardStringsOverlay \
     PixelSystemUIOverlay
 
@@ -32,9 +34,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/google/pixel/overlay/static
 
 # Set default ringtone, notification and alarm
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.alarm_alert=Fresh_start.ogg \
-    ro.config.notification_sound=Eureka.ogg \
-    ro.config.ringtone=Your_new_adventure.ogg
+    ro.config.alarm_alert=Fresh_morning.ogg \
+    ro.config.notification_sound=Kernel.ogg \
+    ro.config.ringtone=The_next_adventure.ogg
 
 # Sepolicy
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \

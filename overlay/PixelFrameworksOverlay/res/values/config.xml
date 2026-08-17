@@ -88,6 +88,14 @@
     -->
     <string name="config_defaultContentCaptureService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>
 
+    <!-- The package name for the system's content protection service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, content protection will be
+         disabled.
+         Example: "com.android.contentprotection/.ContentProtectionService"
+    -->
+    <string name="config_defaultContentProtectionService" translatable="false">com.google.android.odad/com.google.android.apps.miphone.odad.contentprotection.ContentProtectionService</string>
+
     <!-- The package name for the system's content suggestions service.
          Provides suggestions for text and image selection regions in snapshots of apps and should
          be able to classify the type of entities in those selections.
@@ -98,11 +106,14 @@
     -->
     <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
+    <!-- URI for default Accessibility notification sound when to enable accessibility shortcut. -->
+    <string name="config_defaultAccessibilityNotificationSound" translatable="false">Effect_Tick.ogg</string>
+
     <!-- Colon separated list of package names that should be granted DND access -->
-    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer</string>
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool</string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo</string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo:com.google.android.odad</string>
 
     <!-- The package name for the system's speech recognition service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -110,6 +121,15 @@
     -->
     <string name="config_defaultMusicRecognitionService" translatable="false">com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.service.SoundSearchService</string>
     <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
+
+    <!-- The DeviceConfig namespace for the default system on-device sandboxed inference service. -->
+    <string name="config_defaultOnDeviceIntelligenceDeviceConfigNamespace" translatable="false">aicore</string>
+
+    <!-- The component name for the default system on-device intelligence service, -->
+    <string name="config_defaultOnDeviceIntelligenceService" translatable="false">com.google.android.aicore/com.google.android.apps.aicore.service.isolated.AiCoreIntelligenceService</string>
+
+    <!-- The component name for the default system on-device sandboxed inference service. -->
+    <string name="config_defaultOnDeviceSandboxedInferenceService" translatable="false">com.google.android.aicore/com.google.android.apps.aicore.service.isolated.AiCoreIsolatedService</string>
 
     <!-- The component name for the default system rotation resolver service.
         This service must be trusted, as it can be activated without explicit consent of the user.
@@ -320,7 +340,16 @@
     -->
     <string name="config_defaultFieldClassificationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AutofillFieldClassificationService</string>
 
-    <!-- Circle to search -->
+    <!-- Name of the package responsible to handle Contextual Search. -->
     <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
+
+    <!-- The key containing the branching boolean for Contextual Search. -->
+    <string name="config_defaultContextualSearchEnabled" translatable="false">omni.enable_cs_helper</string>
+
+    <!-- The key containing the entrypoint for Contextual Search. -->
+    <string name="config_defaultContextualSearchKey" translatable="false">omni.entry_point</string>
+
+    <!-- The key containing the branching boolean for legacy Search. -->
+    <string name="config_defaultContextualSearchLegacyEnabled" translatable="false">omni.enable_vis</string>
 
 </resources>

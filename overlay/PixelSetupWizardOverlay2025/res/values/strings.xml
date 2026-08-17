@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="headstart_api_endpoint_default">https://pixelonboarding-pa.googleapis.com/v1/headstart/getsetupwizardprofile</string>
+    <string name="moment_description">&quot;From everyday tasks to creative projects, Pixel's built-in AI helps you get more things done&quot;</string>
+    <string name="spoon_action">com.google.android.apps.pixel.psi.app.suw.SET_UP</string>
+    <string name="spoon_package">com.google.android.apps.pixel.psi</string>
+</resources>

@@ -36,6 +36,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.CONTROL_UI_TRACING" />
         <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
         <permission name="android.permission.READ_SYSTEM_GRAMMATICAL_GENDER"/>
+        <permission name="android.permission.REPORT_UI_LATENCY_STATS" />
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
@@ -68,6 +69,8 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.BIND_APPWIDGET"/>
         <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_REMOTE_TASKS"/>
+        <permission name="android.permission.REQUEST_TASK_HANDOFF"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
         <permission name="android.permission.STATUS_BAR"/>
@@ -79,6 +82,12 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.ACCESS_HIDDEN_PROFILES_FULL"/>
         <permission name="android.permission.READ_SEARCH_INDEXABLES" />
         <permission name="android.permission.ACCESS_CONTEXTUAL_SEARCH" />
+        <permission name="android.permission.REPORT_UI_LATENCY_STATS" />
+        <!-- Permissions for showing personal context results in cue bar -->
+        <permission name="android.permission.PERSONAL_CONTEXT_PUBLISH_HINTS"/>
+        <permission name="android.permission.PERSONAL_CONTEXT_RECEIVE_INSIGHTS"/>
+        <permission name="android.permission.PERSONAL_CONTEXT_HOST_INSIGHT_SURFACE"/>
+        <permission name="android.permission.PERSONAL_CONTEXT_READ_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.gsf">
@@ -123,6 +132,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.CUSTOMIZE_SYSTEM_UI"/>
         <permission name="android.permission.SET_WALLPAPER_DIM_AMOUNT"/>
+        <permission name="android.permission.UPDATE_THEME_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.feedback">
@@ -149,6 +159,23 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.desktop.setupwizard">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.SHUTDOWN"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.DISPATCH_PROVISIONING_MESSAGE"/>
+        <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.MANAGE_MULTIUSER_DEVICE_PROVISIONING_STATE"/>
+    </privapp-permissions>
+
 
     <privapp-permissions package="com.google.android.grilservice">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
@@ -196,6 +223,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.ACCESS_CONTEXT_HUB"/>
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.oslo">
@@ -267,9 +295,18 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MANAGE_WALLPAPER_EFFECTS_GENERATION" />
         <permission name="android.permission.ACCESS_SMARTSPACE" />
         <permission name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.READ_WALLPAPER_INTERNAL" />
     </privapp-permissions>
 
     <privapp-permissions package="com.android.multiuser">
         <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.SSRestartDetector">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.READ_LOGS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
 </permissions>

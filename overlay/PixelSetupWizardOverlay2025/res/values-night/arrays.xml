@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="moment_lottie_placeholder_customization">
+        <item>.inverseSurface:#FFFFFF</item>
+        <item>.primary:#669DF6</item>
+        <item>.primaryContainer:#5BB974</item>
+        <item>.surface:#202124</item>
+        <item>.onPrimary:#D2E3FC</item>
+        <item>.onPrimaryContainer:#CEEAD6</item>
+        <item>.surfaceContainer:#000000</item>
+    </string-array>
+</resources>

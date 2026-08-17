@@ -9,4 +9,16 @@
         <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
         <do-not-install-in user-type="android.os.usertype.profile.PRIVATE" />
     </install-in-user-type>
+
+    <!-- Pixel Ai Wallpapers (RELEASE_PACKAGE_PIXEL_WALLPAPER_AI) -->
+    <install-in-user-type package="com.google.android.apps.aiwallpapers">
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <!-- Google Play Services for AR (ARCore) -->
+    <install-in-user-type package="com.google.ar.core">
+        <install-in user-type="FULL" />
+        <install-in user-type="android.os.usertype.profile.MANAGED" />
+        <install-in user-type="android.os.usertype.profile.PRIVATE" />
+    </install-in-user-type>
 </config>

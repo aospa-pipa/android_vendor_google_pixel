@@ -15,6 +15,14 @@
 -->
 <resources>
 
+    <!-- Screenshot editing default activity. Will only be used if the provided component exists and
+      is enabled.
+
+      Must handle ACTION_EDIT image/png intents.
+      Blank falls back to config_screenshotEditor.
+      This name is in the ComponentName flattened format (package/class)  -->
+    <string name="config_preferredScreenshotEditor" translatable="false">com.google.android.apps.pixel.creativeassistant/com.google.android.apps.pixel.creativeassistant.ExternalEditActivity</string>
+
     <!-- Screenshot editing default activity.  Must handle ACTION_EDIT image/png intents.
          Blank sends the user to the Chooser first.
          This name is in the ComponentName flattened format (package/class)  -->
@@ -36,76 +44,23 @@
     <string-array name="config_pluginAllowlist" translatable="false">
         <item>com.android.systemui</item>
         <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>com.android.systemui.clocks</item>
+        <item>com.android.systemui.clocks.debug</item>
         <item>com.android.systemui.clocks.bignum</item>
         <item>com.android.systemui.clocks.calligraphy</item>
         <item>com.android.systemui.clocks.flex</item>
         <item>com.android.systemui.clocks.growth</item>
+        <item>com.android.systemui.clocks.handwritten</item>
         <item>com.android.systemui.clocks.inflate</item>
         <item>com.android.systemui.clocks.metro</item>
         <item>com.android.systemui.clocks.numoverlap</item>
         <item>com.android.systemui.clocks.weather</item>
     </string-array>
 
-    <!-- ComponentName for the file browsing app that the system would expect to be used in work
-         profile. The icon for this app will be shown to the user when informing them that a
-         screenshot has been saved to work profile. If blank, a default icon will be shown. -->
-    <string name="config_sceenshotWorkProfileFilesApp">com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity</string>
-
-    <!-- URI for default Accessibility notification sound when to enable accessibility shortcut. -->
-    <string name="config_defaultAccessibilityNotificationSound" translatable="false">Effect_Tick.ogg</string>
-
-    <!-- The component name, flattened to a string, for the system's credential manager
-      hybrid service. This service allows credential retrieval and storage from, and to
-      remote devices.
-     This service must be trusted, as it can be activated without explicit consent of the user.
-     If no service with the specified name exists on the device, credential manager
-     will still work, but remote credential retrieval and storage will not be offered to
-     the user.
-     See android.credentials.CredentialManager
-    -->
-    <string name="config_defaultCredentialManagerHybridService" translatable="false">com.google.android.gms/.auth.api.credentials.credman.service.RemoteService</string>
-
-    <!-- Package name of Health Connect data migrator application.  -->
-    <string name="config_healthConnectMigratorPackageName" translatable="false">com.google.android.apps.healthdata</string>
-
-    <!-- The name of the package that will hold the call streaming role. -->
-    <string name="config_systemCallStreaming" translatable="false">com.google.android.gms</string>
-
-    <!-- The component name(s), flattened to a string, for the system's credential manager
-      provider services. These services allow retrieving and storing credentials.
-     These services must be trusted, as they can be activated without explicit consent of the user.
-     If no service with the specified name exists on the device, there will be no user configurable
-     provider to service credential manager requests. However, credential manager system
-     services that do not require user consent, will still work.
-     See android.credentials.CredentialManager
-    -->
-    <string-array name="config_enabledCredentialProviderService" translatable="false">
-        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
-    </string-array>
-
-    <!-- The component name(s), flattened to a string, for the system's primary credential manager
-      provider services. These service will be used by default for storing credentials.
-     These services must be trusted, as they can be activated without explicit consent of the user.
-     See android.credentials.CredentialManager
-    -->
-    <string-array name="config_primaryCredentialProviderService" translatable="false">
-        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
-    </string-array>
-
-    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner
-         permission for staging HealthConnect's remote data. The digest should be computed over the
-         DER encoding of the trusted certificate using the SHA-256 digest algorithm. -->
-    <string-array name="config_healthConnectRestoreKnownSigners" translatable="false">
-        <item>56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87</item>
-    </string-array>
-
-    <!-- Certificate digests for trusted apps that will be allowed to obtain the knownSigner Health
-        Connect Migration permissions. The digest should be computed over the DER encoding of the
-        trusted certificate using the SHA-256 digest algorithm. -->
-    <string-array name="config_healthConnectMigrationKnownSigners" translatable="false">
-        <item>B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003</item>
-    </string-array>
-
-
+    <!-- ComponentName for the file browsing app that the system would expect to be used for
+         screenshots. The icon for this app will be shown to the user when informing them that a
+         screenshot has been saved to a different profile (e.g. work profile). If blank, a default
+         icon will be shown. -->
+    <string name="config_screenshotFilesApp" translatable="false">com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity</string>
 
 </resources>

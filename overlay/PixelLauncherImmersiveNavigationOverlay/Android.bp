@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: Paranoid Android
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "PixelLauncherImmersiveNavigationOverlay",
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}

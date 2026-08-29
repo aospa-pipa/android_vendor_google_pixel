@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <dimen name="taskbar_stashed_handle_height">0dp</dimen>
+    <dimen name="taskbar_stashed_handle_width">0dp</dimen>
+    <dimen name="taskbar_stashed_small_screen">0dp</dimen>
+    <dimen name="transient_taskbar_stashed_height">0dp</dimen>
+    <dimen name="taskbar_stashed_size">0.1px</dimen>
+    <dimen name="taskbar_suw_insets">0dp</dimen>
+    <dimen name="transient_taskbar_shadow_blur">0dp</dimen>
+    <dimen name="transient_taskbar_key_shadow_distance">0dp</dimen>
+    <dimen name="transient_taskbar_stroke_width">0dp</dimen>
+</resources>

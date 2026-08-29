@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     PixelDocumentsUIGoogleOverlay \
     PixelDocumentsUIOverlay \
     PixelFrameworksOverlay \
+    PixelLauncherImmersiveNavigationOverlay \
     PixelLauncherOverlay \
     PixelSettingsOverlay \
     PixelSetupWizardOverlay \
